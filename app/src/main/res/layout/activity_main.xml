@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/rdisplay"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/resultdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="0"
+        android:maxLength="26"
+        android:textColor="@color/white"
+        android:textDirection="rtl"
+        android:textSize="50sp" />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdisplay"
+        android:onClick="onbtnclickAC"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/ac"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/no7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:onClick="onclickno7"/>
+
+    <TextView
+        android:id="@+id/no8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac"
+        android:layout_toEndOf="@+id/no7"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="8"
+        android:onClick="onclickno8"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac"
+        android:layout_toEndOf="@+id/no8"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onclickno9"
+        android:padding="32dp"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac"
+        android:layout_toEndOf="@+id/no9"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onclickdiv"
+        android:padding="32dp"
+        android:text="/"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no7"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onclickno4"
+        android:padding="32dp"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no7"
+        android:layout_toEndOf="@+id/no4"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="5"
+        android:onClick="onclickno5"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no7"
+        android:layout_toEndOf="@+id/no5"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="6"
+        android:onClick="onclickno6"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no7"
+        android:layout_toEndOf="@+id/no9"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onclickmultiply"
+        android:padding="32dp"
+        android:text="*"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no4"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="1"
+        android:onClick="onclickno1"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no4"
+        android:layout_toEndOf="@+id/no4"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="2"
+        android:onClick="onclickno2"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/no3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no4"
+        android:layout_toEndOf="@+id/no5"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="3"
+        android:onClick="onclickno3"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no4"
+        android:layout_toEndOf="@+id/no9"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="-"
+        android:onClick="onbtnclicksubtract"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/nodeci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no1"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="."
+        android:textColor="@color/white"
+        android:textSize="54sp" />
+
+    <TextView
+        android:id="@+id/no0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no1"
+        android:layout_toEndOf="@+id/no4"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="0"
+        android:onClick="onclickno0"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/resultt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no1"
+        android:layout_toEndOf="@+id/no5"
+        android:background="@color/blue"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:onClick="onclickresult"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no1"
+        android:layout_toEndOf="@+id/no9"
+        android:fontFamily="sans-serif-black"
+        android:padding="32dp"
+        android:text="+"
+        android:onClick="onbtnclickadd"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+</RelativeLayout>
+
